@@ -7,12 +7,12 @@ import edu.gatech.oad.antlab.pkg2.*;
 
 
 /**
- * CS2335 Ant Lab
- *
- * Prints out a simple message gathered from all of the other classes
- * in the package structure
- */
- public class AntLabMain {
+* CS2335 Ant Lab
+*
+* Prints out a simple message gathered from all of the other classes
+* in the package structure
+*/
+public class AntLabMain {
 
     /**antlab11.java message class*/
     private AntLab11 ant11;
@@ -32,8 +32,8 @@ import edu.gatech.oad.antlab.pkg2.*;
 
 
     /**
-     * the constructor that intializes all the helper classes
-     */
+    * the constructor that intializes all the helper classes
+    */
     public AntLabMain () {
 
         ant11 = new AntLab11();
@@ -46,10 +46,10 @@ import edu.gatech.oad.antlab.pkg2.*;
     }
 
     /**
-     * gathers a string from all the other classes and prints the message
-     * out to the console
-     *
-     */
+    * gathers a string from all the other classes and prints the message
+    * out to the console
+    *
+    */
     public void printOutMessage() {
 
         String toPrint =
@@ -84,21 +84,10 @@ import edu.gatech.oad.antlab.pkg2.*;
 
 
     /**
-     * entry point for the program
-     */
-     public static void main(String[] args) {
+    * entry point for the program
+    */
+    public static void main(String[] args) {
 
         new AntLabMain().printOutMessage();
-<<<<<<< HEAD
-
-     }
-
-
-
-
- }
-=======
-
-     }
- }
->>>>>>> f01bc5de8530f533ee9500f2233283415b16d6cb
+    }
+}
