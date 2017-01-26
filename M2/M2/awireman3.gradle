@@ -1,13 +1,12 @@
-+defaultTasks 'jar'
- +
- +apply plugin: 'java'
- +
- +jar {
- +	manifest {
- +		attributes 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain', 'Class-Path' : '../../lib/resources.jar'
- +	}
- +}
- +
- +dependencies {
- +	compile fileTree(dir: 'lib', include: '*.jar')
- +} 
+defaultTasks 'jar'
+
+apply plugin: 'java'
+
+jar {
+    manifest {
+        attributes 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain', 'Class-Path' : '../../lib/resources.jar'
+    }
+ }
+dependencies {
+    compile fileTree(dir: 'lib', include: '*jar')
+}
