@@ -33,7 +33,7 @@ public class Person4 {
     private String calc(String input) {
       //Person 4 put your implementation here
       String result = "";
-      for (int i = 0; i < input.length; i++) {
+      for (int i = 0; i < input.length(); i++) {
           char textValue = input.charAt(i);
           int intValue = (int)textValue + 1;
           result += (char)intValue;
