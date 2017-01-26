@@ -1,5 +1,11 @@
 package edu.gatech.oad.antlab.person;
 
+
+public static void main(String[] args){
+        Person4 test = new Person4("abc123");
+        System.out.println(test);
+}
+
 /**
  *  A simple class for person 4
  *  returns their name and a
@@ -29,9 +35,16 @@ public class Person4 {
      * @param input the string to be modified
      * @return the modified string
      */
+
     private String calc(String input) {
       //Person 4 put your implementation here
-      return null;
+      String result = "";
+      for (int i = 0; i < input.length; i++) {
+          char textValue = input.charAt(i);
+          int intValue = (int)textValue + 1;
+          result += (char)intValue;
+      }
+      return result;
     }
     
     /**
